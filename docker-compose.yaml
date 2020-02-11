@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  build:
+    build: .
+    privileged: true
+    volumes:
+      - './work:/build/pi-gen/work'
+      - './deploy:/build/pi-gen/deploy'
