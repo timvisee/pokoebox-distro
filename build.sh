@@ -5,4 +5,4 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 # Switch to pi-gen directory, start build process
 cd ./pi-gen
-./build-docker.sh -c ../config $@
+./build.sh -c ../config $@

@@ -6,9 +6,13 @@ PokoeBox project: https://gitlab.com/timvisee/pokoebox
 This builds a custom Linux distribution optimized for the PokoeBox project to
 use on a Raspberry Pi using the [`pi-gen`][pi-gen] toolset provided by Raspberry.
 
-## Build in Docker
+## Build image
 ```bash
-docker-compose run --rm build
+# Build on host, see pi-gen requirements
+./build.sh
+
+# Build in Docker
+./build-docker.sh
 ```
 
 ## License
