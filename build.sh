@@ -22,7 +22,7 @@ cd ../
 
 # Moving deployment files
 echo Moving deployment files...
-rm -r ./deploy
+rm -rf ./deploy
 mv ./pi-gen/deploy ./
 
 # Cleanup
