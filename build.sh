@@ -20,6 +20,11 @@ cd ./pi-gen
 ./build.sh
 cd ../
 
+# Moving deployment files
+echo Moving deployment files...
+rm -r ./deploy
+mv ./pi-gen/deploy ./
+
 # Cleanup
 echo Cleanup pi-gen directory
 rm -r ./pi-gen/config ./pi-gen/stage*-pokoe
