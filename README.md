@@ -2,7 +2,7 @@
 Repository for the custom PokoeOS Linux distribution for the PokoeBox project.  
 PokoeBox project: https://gitlab.com/timvisee/pokoebox
 
-The PokoeOS image includes:
+The PokoeOS distribution includes:
 - Based on [Raspbian][raspbian]
 - Includes PokoeBox Player
 - Boots into PokoeBox Player
@@ -36,7 +36,8 @@ requirements they have.
 ./build-docker.sh
 ```
 
-After building succeeds, see the `./deploy` directory.
+Building the image might take 30 to 60 minutes. When the build succeeds, see
+the `./deploy` directory.
 
 ## License
 This project is released under the GNU GPL-3.0 license.
