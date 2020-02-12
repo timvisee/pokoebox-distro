@@ -1,10 +1,11 @@
 # PokoeOS Linux Distro
-Toolset for building the PokoeOS Linux distribution.
+Tools for building the PokoeOS Linux distribution.
 
 PokoeBox project: https://gitlab.com/timvisee/pokoebox
 
-This builds a custom Linux distribution optimized for the PokoeBox project to
-use on a Raspberry Pi using the [`pi-gen`][pi-gen] toolset provided by Raspberry.
+This builds a custom Linux distribution optimized and preconfigured for the
+PokoeBox project to use on a Raspberry Pi using the [`pi-gen`][pi-gen] tool
+provided by Raspberry.
 
 ## Build image
 ```bash
