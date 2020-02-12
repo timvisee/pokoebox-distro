@@ -1,9 +1,16 @@
 # PokoeOS Linux Distro
-Tool for building the PokoeOS Linux distribution for the PokoeBox project.
-
+Repository for the custom PokoeOS Linux distribution for the PokoeBox project.  
 PokoeBox project: https://gitlab.com/timvisee/pokoebox
 
-This repository holds the toolset and configuration files needed to build
+The PokoeOS image includes:
+- Based on [Raspbian][raspbian]
+- Includes PokoeBox Player
+- Boots into PokoeBox Player
+- Includes PokoeBox runtime libraries
+- Includes configurations for special hardware
+- Minimal image (smaller, faster to boot, stripped obsolete data)
+
+This repository holds the tools and configuration files needed to build
 the custom Linux distribution optimized and preconfigured for the PokoeBox
 project. The distribution targets the Raspberry Pi with a specific hardware
 configuration.
@@ -12,12 +19,14 @@ The [`pi-gen`][pi-gen] tooling by Raspberry is used under the hood for building
 the image.
 
 ## Building
-This repository provides the `./build.sh` and `./build-docker.sh` script 
-similar to `pi-gen`. It configures your environment for building the PokoeOS
-image. It then proxies the call to the respective pi-gen to generate the image.
+This repository provides the `./build.sh` and `./build-docker.sh` scripts,
+similar to the scripts in `pi-gen`. Both configure your environment for
+building the PokoeOS image. They then proxy the call to the respective
+`pi-gen` script to generate the image.
 
-Please refer to the [`pi-gen`][pi-gen] README for information on which of the
-two to use, and what requirements they have.
+Call one of these scripts to invoke the build process. Please refer to the
+[`pi-gen`][pi-gen] README for information on which to use, and what
+requirements they have.
 
 ```bash
 # Build on host
@@ -34,3 +43,4 @@ This project is released under the GNU GPL-3.0 license.
 Check out the [LICENSE](./LICENSE) file for more information.
 
 [pi-gen]: https://github.com/RPi-Distro/pi-gen
+[raspbian]: https://www.raspbian.org/
