@@ -18,6 +18,7 @@ cp -r ./config ./stage* ./pi-gen/
 echo Starting pi-gen build...
 cd ./pi-gen
 ./build-docker.sh
+cd ../
 
 # Cleanup
 echo Cleanup pi-gen directory
