@@ -2,8 +2,8 @@ version: '3'
 
 services:
   build:
-    build: .
+    image: debian
     privileged: true
     volumes:
-      - './work:/build/pi-gen/work'
-      - './deploy:/build/pi-gen/deploy'
+      - './:/root/'
+    command: '/root/build-docker.sh'
