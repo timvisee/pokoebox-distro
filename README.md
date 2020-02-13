@@ -1,6 +1,5 @@
 # PokoeOS Linux Distro
-Repository for the custom PokoeOS Linux distribution for the PokoeBox project.  
-PokoeBox project: https://gitlab.com/timvisee/pokoebox
+Repository for the custom PokoeOS Linux distribution for the [PokoeBox project][pokoebox].
 
 The PokoeOS distribution includes:
 - Based on [Raspbian][raspbian]
@@ -43,5 +42,6 @@ the `./deploy` directory.
 This project is released under the GNU GPL-3.0 license.
 Check out the [LICENSE](./LICENSE) file for more information.
 
+[pokoebox]: https://gitlab.com/timvisee/pokoebox
 [pi-gen]: https://github.com/RPi-Distro/pi-gen
 [raspbian]: https://www.raspbian.org/
