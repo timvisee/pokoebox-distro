@@ -1,7 +1,7 @@
 #!/bin/bash -e
 
 # Install pokoebox updater
-curl -sSL 'https://gitlab.com/timvisee/pokoebox/-/raw/master/scripts/update.sh' -o "${ROOTFS_DIR}/opt/pokoebox/update"
+wget 'https://gitlab.com/timvisee/pokoebox/-/raw/master/scripts/update.sh' -O "${ROOTFS_DIR}/opt/pokoebox/update"
 chmod a+x "${ROOTFS_DIR}/opt/pokoebox/update"
 
 # Install other pokoebox files
