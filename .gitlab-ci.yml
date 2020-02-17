@@ -24,14 +24,9 @@ build-image:
     - dpkg-reconfigure qemu-user-static
 
     # Build the image, do not export images
+    - ./prepare.sh
     - touch pi-gen/stage{2,{4,5}-pokoe}/SKIP_IMAGES
-    - ./build.sh
+    - (cd pi-gen/ && ./build.sh)
     - rsync -av pi-gen/work/*/build.log pi-gen/deploy/
 
     - (cd pi-gen/deploy && sha256sum *.info image*.zip > sha256sums)
-  artifacts:
-    expire_in: 4 weeks
-    paths:
-      - pi-gen/deploy/*.info
-      - pi-gen/deploy/image*.zip
-      - pi-gen/deploy/sha256sums
