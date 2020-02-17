@@ -23,7 +23,8 @@ build-image:
     # Set up build
     - dpkg-reconfigure qemu-user-static
 
-    # Build the image
+    # Build the image, do not export images
+    - touch pi-gen/stage{2,{4,5}-pokoe}/SKIP_IMAGES
     - ./build.sh
     - rsync -av pi-gen/work/*/build.log pi-gen/deploy/
 
