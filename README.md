@@ -1,3 +1,8 @@
+[![Build status on GitLab CI][gitlab-ci-master-badge]][gitlab-ci-link]
+
+[gitlab-ci-link]: https://gitlab.com/timvisee/pokoebox-distro/pipelines
+[gitlab-ci-master-badge]: https://gitlab.com/timvisee/pokoebox-distro/badges/master/pipeline.svg
+
 # PokoeOS Linux Distro
 Repository for the custom PokoeOS Linux distribution for the [PokoeBox project][pokoebox].
 

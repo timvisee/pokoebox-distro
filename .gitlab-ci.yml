@@ -7,6 +7,9 @@ variables:
   DOCKER_DRIVER: overlay2
 
 # Build the image
+# - Note: we can only build images, and cannot export them through GitLab CI,
+#   because the standard shared runners aren't privileged to create loopback
+#   devices through losetup
 build-image:
   stage: build
   image: 'debian:buster'
