@@ -10,9 +10,7 @@ cd $DIR
 
 # Build using pi-gen
 echo Starting pi-gen build...
-cd ./pi-gen
-./build.sh
-cd ../
+(cd ./pi-gen && ./build.sh)
 
 # Moving deployment files
 echo Moving deployment files...

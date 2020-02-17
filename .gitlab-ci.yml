@@ -11,22 +11,14 @@ build-image:
   stage: build
   image: 'debian:buster'
   script:
-    # - |
-    #   echo "IMG_NAME='PokoeOS-${CI_COMMIT_REF_NAME}'
-    #   ENABLE_SSH=1" > config
-
     # Dependencies
     - apt-get update
     - apt-get -y install git vim parted quilt coreutils qemu-user-static debootstrap zerofree zip dosfstools bsdtar libcap2-bin rsync grep udev xz-utils curl xxd file kmod kpartx bc
-    - rm -rf /var/lib/apt/lists/*
 
     # Set up build
     - dpkg-reconfigure qemu-user-static
-
-    # Build the image, do not export images
     - ./prepare.sh
     - touch pi-gen/stage{2,{4,5}-pokoe}/SKIP_IMAGES
-    - (cd pi-gen/ && ./build.sh)
-    - rsync -av pi-gen/work/*/build.log pi-gen/deploy/
 
-    - (cd pi-gen/deploy && sha256sum *.info image*.zip > sha256sums)
+    # Test build
+    - (cd pi-gen/ && ./build.sh)
