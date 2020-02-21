@@ -1,4 +1,4 @@
-# Tweaks for timvisee
+# Tweaks for HDMI display by @timvisee
 max_usb_current=1
 hdmi_group=2
 hdmi_mode=87
