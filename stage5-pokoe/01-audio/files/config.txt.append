@@ -1,0 +1,3 @@
+# Enable IQaudIO DAC+ driver
+dtoverlay=iqaudio-dacplus
+

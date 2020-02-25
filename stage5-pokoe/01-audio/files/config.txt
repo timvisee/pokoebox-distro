@@ -1,2 +1,0 @@
-# Tweaks for IQaudIO DAC+ by @timvisee
-dtoverlay=iqaudio-dacplus

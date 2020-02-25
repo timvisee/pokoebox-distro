@@ -1,0 +1,4 @@
+# Enable i2c by default
+dtparam=i2c_vc=on
+dtparam=i2c_arm=on
+
