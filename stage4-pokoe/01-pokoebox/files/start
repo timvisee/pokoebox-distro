@@ -1,3 +1,8 @@
 #!/bin/sh
 
+# Start PulseAudio
+# TODO: create systemd service for audio
+pulseaudio -D
+
+# Start PokoeBox Player
 xinit /opt/pokoebox/pokoebox-player
