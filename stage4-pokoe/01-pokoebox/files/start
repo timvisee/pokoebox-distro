@@ -5,7 +5,7 @@ export GDK_DPI_SCALE=1.5
 
 # Start PulseAudio
 # TODO: create systemd service for audio
-pulseaudio -D
+pulseaudio --realtime --no-cpu-limit -D
 
 # Start PokoeBox Player
 xinit /opt/pokoebox/pokoebox-player
