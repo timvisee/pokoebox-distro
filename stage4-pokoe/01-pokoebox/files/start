@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# Configure DPI scaling
+export GDK_DPI_SCALE=1.5
+
 # Start PulseAudio
 # TODO: create systemd service for audio
 pulseaudio -D
