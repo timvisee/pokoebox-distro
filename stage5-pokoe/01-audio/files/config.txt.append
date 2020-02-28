@@ -1,3 +1,5 @@
 # Enable IQaudIO DAC+ driver
 dtoverlay=iqaudio-dacplus
 
+# Disable crappy built-in bluetooth
+dtoverlay=disable-bt
