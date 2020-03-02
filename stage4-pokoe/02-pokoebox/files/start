@@ -1,6 +1,7 @@
 #!/bin/sh
 
-# Configure DPI scaling
+# Use dark mode, set DPI scaling
+export GTK_THEME=Adwaita:dark
 export GDK_DPI_SCALE=1.5
 
 # Start PulseAudio
