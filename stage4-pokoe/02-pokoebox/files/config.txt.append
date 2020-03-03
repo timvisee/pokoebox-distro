@@ -1,0 +1,7 @@
+[all]
+
+# HDMI CEC OSD name
+cec_osd_name=PokoeBox
+
+# Disable rainbow firmware splash
+disable_splash=1

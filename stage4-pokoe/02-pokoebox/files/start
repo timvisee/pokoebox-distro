@@ -8,5 +8,9 @@ export GDK_DPI_SCALE=1.5
 # TODO: create systemd service for audio
 pulseaudio --high-priority --realtime --no-cpu-limit -D
 
+# Start screensaver daemon
+# TODO: create systemd service for screensaver
+runuser -l pokoe -c 'sleep 10; export DISPLAY=:0; xscreensaver -no-splash' &
+
 # Start PokoeBox Player
 xinit /opt/pokoebox/pokoebox-player

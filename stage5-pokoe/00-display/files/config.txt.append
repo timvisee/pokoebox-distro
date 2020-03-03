@@ -1,7 +1,11 @@
+[all]
+
 # Configure WaveShire HDMI touch screen
 max_usb_current=1
 hdmi_group=2
 hdmi_mode=87
-hdmi_cvt 1024 600 60 6 0 0 0
+hdmi_cvt=1024 600 60 6 0 0 0
 hdmi_drive=1
 
+# Disable HDMI port on blanking
+hdmi_blanking=1
