@@ -16,5 +16,4 @@ install -m 755 files/xscreensaver "${ROOTFS_DIR}/home/pokoe/.xscreensaver"
 
 # Install pokoebox updater
 wget 'https://gitlab.com/timvisee/pokoebox/-/raw/master/scripts/update.sh' -O "${ROOTFS_DIR}/opt/pokoebox/update"
-chown pokoe:pokoe "${ROOTFS_DIR}/opt/pokoebox/update"
-chmod u+rwx,g+rx "${ROOTFS_DIR}/opt/pokoebox/update"
+chmod u+rw,g+r,a+x "${ROOTFS_DIR}/opt/pokoebox/update"
