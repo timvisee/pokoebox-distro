@@ -10,11 +10,11 @@ pulseaudio --high-priority --realtime --no-cpu-limit -D
 
 # Start screensaver daemon
 # TODO: create systemd service for this
-runuser -l pokoe -c 'sleep 10; export DISPLAY=:0; xscreensaver -no-splash' &
+bash -c 'sleep 10; export DISPLAY=:0; xscreensaver -no-splash' &
 
 # Start MPRIS proxy for bluetooth
 # TODO: create systemd service for this
-runuser -l pokoe -c 'mpris-proxy' &
+mpris-proxy &
 
 # Start PokoeBox Player
-xinit /opt/pokoebox/pokoebox-player
+startx /opt/pokoebox/pokoebox-player
