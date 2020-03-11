@@ -1,4 +1,4 @@
 #!/bin/bash -e
 
-# Install pokoebox player
+# Install PokoeBox Player
 /opt/pokoebox/update

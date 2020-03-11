@@ -1,0 +1,10 @@
+
+# Start PokoeBox Player on tty1
+if tty | grep -q '^/dev/tty1$'; then
+    echo Detected tty1, starting PokoeBox Player...
+    /usr/bin/startx
+
+    echo PokoeBox Player quit, waiting 5 seconds...
+    sleep 5
+    exit $?
+fi

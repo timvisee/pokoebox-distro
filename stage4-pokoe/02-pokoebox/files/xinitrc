@@ -1,0 +1,11 @@
+#!/bin/sh
+
+export GTK_THEME=Adwaita:dark
+export GDK_DPI_SCALE=1.5
+export RUST_BACKTRACE=1
+
+# Start screensaver daemon
+xscreensaver -no-splash &
+
+# Start PokoeBox Player
+exec /opt/pokoebox/pokoebox-player
